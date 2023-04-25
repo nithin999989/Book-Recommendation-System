@@ -9,6 +9,8 @@ books = pd.read_pickle(open('books.pkl','rb'))
 similarity_scores = pd.read_pickle(open('similarity_scores.pkl','rb'))
 
 app = Flask(__name__)
+app.debug = True
+
 
 @app.route('/')
 def index():
